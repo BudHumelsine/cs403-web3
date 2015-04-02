@@ -1,0 +1,36 @@
+New log file opened at Wed Apr 01 17:33:41 EDT 2015 by 22716@USMANBDDCHEWAR2
+Sending msg to client activator-64cfb0bc-4571-467c-8e97-e016a8dac054: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Christa.Chewar\Desktop\myApp\.sbtserver\connections\master.log))
+Sending msg to client activator-64cfb0bc-4571-467c-8e97-e016a8dac054: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Christa.Chewar\Desktop\myApp\.sbtserver\master.log))
+Dropping message DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Christa.Chewar\Desktop\myApp\.sbtserver\master.log)) because client activator-64cfb0bc-4571-467c-8e97-e016a8dac054 of an exception serializing and sending: java.net.SocketException: Software caused connection abort: socket write error
+stack trace sending message was 
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at sbt.impl.ipc.Peer.send(IPC.scala:79)
+	at sbt.impl.ipc.Peer.send(IPC.scala:83)
+	at sbt.impl.ipc.Peer.sendString(IPC.scala:106)
+	at sbt.impl.ipc.Peer.sendJson(IPC.scala:119)
+	at sbt.server.SbtClientHandler$$anonfun$send$1.apply$mcV$sp(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.send(SbtClientHandler.scala:128)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:94)
+Sending msg to client activator-64cfb0bc-4571-467c-8e97-e016a8dac054: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Christa.Chewar\Desktop\myApp\.sbtserver\connections\activator-64cfb0bc-4571-467c-8e97-e016a8dac054.log))
+Dropping message DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Christa.Chewar\Desktop\myApp\.sbtserver\connections\activator-64cfb0bc-4571-467c-8e97-e016a8dac054.log)) because client activator-64cfb0bc-4571-467c-8e97-e016a8dac054 of an exception serializing and sending: java.net.SocketException: socket is closed
+stack trace sending message was 
+java.net.SocketException: socket is closed
+	at sbt.impl.ipc.Peer.send(IPC.scala:74)
+	at sbt.impl.ipc.Peer.send(IPC.scala:83)
+	at sbt.impl.ipc.Peer.sendString(IPC.scala:106)
+	at sbt.impl.ipc.Peer.sendJson(IPC.scala:119)
+	at sbt.server.SbtClientHandler$$anonfun$send$1.apply$mcV$sp(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.send(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler$clientThread$.run(SbtClientHandler.scala:42)
+Reading next message from client.
+Client activator-64cfb0bc-4571-467c-8e97-e016a8dac054 closed, java.net.SocketException: socket is closed, shutting down
+Client activator-64cfb0bc-4571-467c-8e97-e016a8dac054 thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client activator-64cfb0bc-4571-467c-8e97-e016a8dac054

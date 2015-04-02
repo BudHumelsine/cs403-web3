@@ -1,0 +1,40 @@
+@(items: List[TodoItem], todoItemForm: Form[TodoItem])
+@import helper._ 
+@import helper.twitterBootstrap._
+
+@main("To do list") {
+<div class="container-fluid">
+ <div class="row">
+ 
+  <div class="col-md-4">	
+	<h1>To do:</h1>
+	
+	<table class="table table-striped">
+		@items.map { item =>
+		<tr><td>		
+			@form(routes.TodoList.deleteTask(item.title)) {
+			#@(item.priority + " - " + item.title) 
+ 			  <input type="submit" class="btn btn-default btn-xs" value="Delete">
+			}
+		</td></tr>
+		}
+	</table>
+  </div>
+	
+  <div class="col-md-4">
+	<h1>Add a new task</h1>
+    
+    @helper.form(action = routes.TodoList.add, 'class->"form-inline") {
+
+        @inputText(todoItemForm("title"),'_label -> "Title",'class -> "control-label") 
+        @inputText(todoItemForm("priority"),'_label -> "Priority",'class -> "control-label")
+      
+        <div class="form-actions">
+		  <input type="submit" class="btn btn-success" value="Add Item">
+		  <a href="@routes.TodoList.items" class="btn">Cancel</a>
+		</div>
+    }
+  </div>
+ </div>
+</div>	
+}

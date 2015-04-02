@@ -1,0 +1,135 @@
+New log file opened at Wed Apr 01 17:33:40 EDT 2015 by 22716@USMANBDDCHEWAR2
+Taking next connection to: 51700
+New client attempting to connect on port: 51701-51700
+  Address = /134.240.13.211:51700
+This client on port 51701 has uuid 2cd25473-8226-444f-b08c-753ef4c0bf98 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2cd25473-8226-444f-b08c-753ef4c0bf98
+Taking next connection to: 51700
+New client attempting to connect on port: 51702-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51702
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51703-51700
+  Address = /134.240.13.211:51700
+This client on port 51703 has uuid 34f59067-6afb-4e92-9f04-bb8048bdd159 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2cd25473-8226-444f-b08c-753ef4c0bf98, activator-34f59067-6afb-4e92-9f04-bb8048bdd159
+Taking next connection to: 51700
+New client attempting to connect on port: 51704-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51704
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51705-51700
+  Address = /134.240.13.211:51700
+This client on port 51705 has uuid 75548561-e860-41c5-9357-5a40ee044026 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2cd25473-8226-444f-b08c-753ef4c0bf98, activator-34f59067-6afb-4e92-9f04-bb8048bdd159, activator-75548561-e860-41c5-9357-5a40ee044026
+Taking next connection to: 51700
+New client attempting to connect on port: 51706-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51706
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51707-51700
+  Address = /134.240.13.211:51700
+This client on port 51707 has uuid 14751c92-f9d2-4db1-aa75-4477cf85a20c configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2cd25473-8226-444f-b08c-753ef4c0bf98, activator-34f59067-6afb-4e92-9f04-bb8048bdd159, activator-75548561-e860-41c5-9357-5a40ee044026, activator-14751c92-f9d2-4db1-aa75-4477cf85a20c
+Taking next connection to: 51700
+New client attempting to connect on port: 51708-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51708
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51709-51700
+  Address = /134.240.13.211:51700
+This client on port 51709 has uuid 64cfb0bc-4571-467c-8e97-e016a8dac054 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2cd25473-8226-444f-b08c-753ef4c0bf98, activator-75548561-e860-41c5-9357-5a40ee044026, activator-14751c92-f9d2-4db1-aa75-4477cf85a20c, activator-64cfb0bc-4571-467c-8e97-e016a8dac054
+Taking next connection to: 51700
+New client attempting to connect on port: 51758-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51758
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51759-51700
+  Address = /134.240.13.211:51700
+This client on port 51759 has uuid b9b917f9-d9aa-4379-9624-2b6b8af1a96e configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-14751c92-f9d2-4db1-aa75-4477cf85a20c, activator-b9b917f9-d9aa-4379-9624-2b6b8af1a96e
+Taking next connection to: 51700
+New client attempting to connect on port: 51760-51700
+  Address = /134.240.13.211:51700
+Handshake exception on socket: 51760
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51700
+New client attempting to connect on port: 51761-51700
+  Address = /134.240.13.211:51700
+This client on port 51761 has uuid 5bf60213-088d-4ae5-9305-ac1d2bf89727 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-14751c92-f9d2-4db1-aa75-4477cf85a20c, activator-b9b917f9-d9aa-4379-9624-2b6b8af1a96e, activator-5bf60213-088d-4ae5-9305-ac1d2bf89727
+Taking next connection to: 51700
